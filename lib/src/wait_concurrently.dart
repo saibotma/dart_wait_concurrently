@@ -10,7 +10,7 @@ Future<(T1, T2)> waitConcurrently<T1, T2>(
     future2.then((value) => result2 = value)
   ]);
 
-  return Future.value((result1, result2));
+  return (result1, result2);
 }
 
 Future<(T1, T2, T3)> waitConcurrently3<T1, T2, T3>(
